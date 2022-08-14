@@ -2,32 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
+  <main class="bg-card">
+    <section class="card-content">
+      <section class="nft-img-container">
+        <div class="img-color-hover">
+          
+        </div>
+        <img class="nft-img" src="images/image-equilibrium.jpg" alt="">
+      </section>
+      <section class="content">
+        <p class="title">Equilibrium #3429</p>
+        <p class="description">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="features-container">
+          <div class="price-container">
+            <svg class="nft-icon" width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+            <p class="price-text">0.041 ETH</p>
+          </div>
+          <div class="timer-container">
+            <svg class="timer-icon" width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+            <p class="timer-text">3 days left</p>
+          </div>
+        </div>
+        <hr class="line">
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="photo" src="images/image-avatar.png" alt="">
+          </div>
+          <p class="profile-text">Creation of <span class="emphasis">Jules Wyvern</span></p>
+        </div>
+      </section>
+    </section>
+  </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#"><a href="https://github.com/BrunoAfonsoOliveira" target="_blank">Bruno Afonso de Oliveira</a></a>.</p>
   </div>
 </body>
 </html>
